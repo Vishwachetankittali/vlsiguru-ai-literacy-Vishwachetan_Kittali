@@ -28,11 +28,11 @@ Documenting My 16-week AI Literacy Layer portfolio and engineering journal.
 - [Skill 4] :- Increase the Efficiency of the work by Integrating AI
 
 ## Week 1 artifacts
-- [Week 01 index](week-01/README.md)
-- [Questions Q1-Q10](week-01/questions.md)
-- [Verification log](week-01/verification-log.md)
-- [AI assistant comparison](week-01/ai-comparison.md)
-- [Journal - Week 1](journal/week-01.md)
+- [Week 01 index](Week-01/README.md)
+- [Questions Q1-Q10](Week-01/questions.md)
+- [Verification log](Week-01/verification-log.md)
+- [AI assistant comparison](Week-01/ai-comparison.md)
+- [Journal - Week 1](journal/Week-01.md)
 
 ## AI Usage Declaration
 AI tools used:

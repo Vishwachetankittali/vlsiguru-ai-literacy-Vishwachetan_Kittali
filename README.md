@@ -3,7 +3,7 @@
 Documenting My 16-week AI Literacy Layer portfolio and engineering journal.
 
 ## About me
-- **Name:** VISHWACHETAN kITTALI
+- **Name:** Vishwachetan Kittali
 - **VLSI track:** PD (Physical Design)
 - **College:** NHCE Bengaluru
 

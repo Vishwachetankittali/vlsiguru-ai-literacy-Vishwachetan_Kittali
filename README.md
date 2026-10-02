@@ -25,7 +25,7 @@ Documenting My 16-week AI Literacy Layer portfolio and engineering journal.
 - [Skill 1] :- Understand AI 
 - [Skill 2] :- Differentiate and Classify Automations  
 - [Skill 3] :- verifying AI output against reliable sources
-- [Skill 4] :- Increase the Efficiency of the work by 
+- [Skill 4] :- Increase the Efficiency of the work by Integrating AI
 
 ## Week 1 artifacts
 - [Week 01 index](week-01/README.md)

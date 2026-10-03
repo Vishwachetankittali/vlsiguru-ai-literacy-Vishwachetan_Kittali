@@ -3,9 +3,9 @@
 Documenting My 16-week AI Literacy Layer portfolio and engineering journal.
 
 ## About me
-- **Name:** Vishwachetan Kittali
+- **Name:**       **VISHWACHETAN KITTALI**
 - **VLSI track:** PD (Physical Design)
-- **College:** NHCE Bengaluru
+- **College:**    NHCE Bengaluru
 
 ## Purpose of the AI Literacy Layer
 -> To understand the difference Software automation, Generative and Agentic Ai. \
@@ -22,10 +22,10 @@ Documenting My 16-week AI Literacy Layer portfolio and engineering journal.
 - [ ] Weeks 05-16 (will be added as released)
 
 ## Skills I expect to build
-- [Skill 1] :- Understand AI 
-- [Skill 2] :- Differentiate and Classify Automations  
-- [Skill 3] :- verifying AI output against reliable sources
-- [Skill 4] :- Increase the Efficiency of the work by Integrating AI
+- Skill 1 :- Understand AI 
+- Skill 2 :- Differentiate and Classify Automations  
+- Skill 3 :- verifying AI output against reliable sources
+- Skill 4 :- Increase the Efficiency of the work by Integrating AI
 
 ## Week 1 artifacts
 - [Week 01 index](Week-01/README.md)
@@ -36,9 +36,9 @@ Documenting My 16-week AI Literacy Layer portfolio and engineering journal.
 
 ## AI Usage Declaration
 AI tools used:
-- [ChatGPT / Gemini / Claude ]
+- ChatGPT & Gemini & Claude
 
 Used for:
-- [explanation / brainstorming / comparison / debugging ]
+- explanation / brainstorming / comparison / debugging 
 
 I independently reviewed and verified the important factual or technical claims in this submission before submitting it.

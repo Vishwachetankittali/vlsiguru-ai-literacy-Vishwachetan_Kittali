@@ -1,20 +1,59 @@
-# Week 01 Questions
-
-> Keep each answer concise (about 150-300 words for conceptual questions). Write in your own words.
-
 ## Q1 - AI → ML → Deep Learning → Generative AI → Agents
 
 ### A - Answer
-<!-- Definitions of the 5 terms in your own words; one hierarchy/concept map (agents may sit outside the hierarchy); one everyday example per term; 3-5 closing sentences on generative model vs agentic system. -->
+- **Artificial Intelligence (AI):** the broad goal of making computers do
+  tasks that normally need human intelligence, such as reasoning, perceiving
+  or deciding.
+- **Machine Learning (ML):** a way of building AI where the system learns
+  patterns from data instead of following hand-written rules.
+- **Deep Learning (DL):** ML that uses many-layered neural networks, which
+  is especially good with images, audio and language.
+- **Generative AI:** models, mostly deep learning ones, that create new
+  content such as text, images or code.
+- **AI Agent:** a system built around a model (often an LLM) that can use
+  tools, take steps, observe results and decide what to do next to
+  complete a goal. It is a way of building a system, not a type of model.
 
 ### E - Evidence
-<!-- 2+ reliable source links; the diagram: ![Q1 diagram](evidence/q1-diagram.png) -->
+
+**Hierarchy**
+
+```mermaid
+flowchart TD
+    AI[Artificial Intelligence] --> ML[Machine Learning]
+    ML --> DL[Deep Learning]
+    DL --> GEN[Generative AI]
+    GEN -.used as the brain of.-> AG[AI Agent system]
+    TOOLS[Tools + loop + goals] -.added to build.-> AG
+```
+
+I kept agents outside the nested hierarchy: they are a system that uses a
+model plus tools and a loop, so I treat them as a workflow concept.
+
+| Term | Everyday example |
+|---|---|
+| AI | A chess program that chooses moves |
+| ML | A spam filter trained on past emails |
+| Deep learning | Face unlock on a phone, or voice recognition |
+| Generative AI | A chatbot writing an email from an instruction |
+| AI agent | An assistant that searches prices, compares options, revises a plan and then reports back |
+
+
+**Relationship and key difference.** AI is the big field. ML is one way of
+doing AI, deep learning is a powerful kind of ML, and generative AI uses
+deep learning to create new content. A generative model takes an input and
+produces an output once; an agentic system wraps a model in a loop where
+it can call tools, see results and choose the next action. So the model
+supplies the language ability, and the agent system supplies the action
+and control.
 
 ### V - Verification
-<!-- How did you check it? Which source did you use and what did you compare? -->
+I compared my definitions with (https://toloka.ai/blog/difference-between-ai-ml-llm-and-generative-ai/) and (https://medium.com/@manastiwary2067/understanding-ai-ai-ml-dl-nlp-generative-ai-agentic-ai-fb49bc3e6c15).
 
 ### R - Reflection
-<!-- What did you learn? What could still go wrong? -->
+The key lesson is that these terms are nested for the first four and
+different in kind for the fifth. What could still go wrong: marketing uses
+"AI" and "agent" loosely, so I should check what a product actually does.
 
 ---
 
@@ -59,16 +98,61 @@ very complex, so complexity is not a test for AI.
 ## Q3 - What Happens When You Ask an LLM a Question?
 
 ### A - Answer
-<!-- Intuitive explanation using: prompt, token, context, probability, next-token prediction, generated response; training vs inference in 1-2 sentences; why fluent text can be false. -->
+When I submit a prompt, the text is split into tokens (small pieces
+of words). The model reads these tokens, along with any earlier text in
+its context, and calculates a probability for every possible next token.
+It picks one token, adds it to the text, and repeats this step by step
+until the response is finished. The response is therefore built one token
+at a time.
 
 ### E - Evidence
-<!-- Annotated flow diagram: Prompt → Tokens → Model processing → Probability distribution → Next token selection → Generated response; 1+ reliable technical/educational source. -->
+
+**Flow diagram**
+
+```mermaid
+flowchart LR
+    P[Prompt] --> T[Tokens]
+    T --> M[Model processing with context]
+    M --> D[Probability distribution over next tokens]
+    D --> S[Next token selection]
+    S --> R[Generated response]
+    S -->|append token and repeat| M
+```
+
+| Term | Meaning in my words |
+|---|---|
+| Prompt | The text I give the model |
+| Token | A small chunk of text (a word, part of a word or punctuation) the model reads and writes |
+| Context | Everything the model can see at once: my prompt, earlier messages and the response so far |
+| Probability | How likely the model thinks each possible next token is |
+| Next-token prediction | Choosing the next token based on those probabilities |
+| Generated response | The sequence of tokens produced, shown to me as text |
+
+| Stage | What happens |
+|---|---|
+| Prompt → Tokens | Text is converted into numbered tokens the model can process |
+| Model processing | The model uses the tokens and context to compute scores |
+| Probability distribution | Scores become probabilities over all possible next tokens |
+| Next token selection | One token is chosen, often the most likely or a sampled one |
+| Generated response | The token is added and the loop repeats until the model stops |
+
+**Training vs inference.** Training is when the model learns its
+parameters from large amounts of data. Inference is when the trained model
+is used to answer a prompt, without learning anything new from it.
+
+**Why fluent but false is possible.** The model is trained to produce text
+that is likely given what came before, not to check facts. A sentence can
+be very plausible language and still be wrong. My Q4 experiment showed this:
+ChatGPT's wrong total looked neat and confident.
 
 ### V - Verification
-<!-- How did you check it? Which source did you use and what did you compare? -->
+I compared my explanation with (https://medium.com/data-science-collective/what-happens-when-you-send-a-prompt-to-an-llm-d12932849609).
+It matched, for example that the model can sample instead of always taking the top token.
 
 ### R - Reflection
-<!-- What did you learn? What could still go wrong? -->
+I understood: why the response arrives token by token.   
+What still confuses me: how the model decides what matters in the context.  
+Limit of this explanation: it skips the maths, and real chat models are also adjusted after training to follow instructions.
 
 ---
 ## Q4 - Hallucination Experiment

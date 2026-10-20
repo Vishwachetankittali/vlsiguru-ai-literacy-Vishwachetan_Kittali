@@ -26,10 +26,10 @@ How does a computer move from examples and data to a model that can recognise pa
 
 ## ML Foundations Map (lifecycle)
 
-![ML Foundations Map - lifecycle](images/lifecycle_map.png)
+![ML Foundations Map - lifecycle](evidence/lifecycle_map.png)
 
 ### Where the main ideas sit on the lifecycle
-![Paradigms, task types and lifecycle stages](images/paradigm_task_lifecycle.png)
+![Paradigms, task types and lifecycle stages](evidence/paradigm_task_lifecycle.png)
 
 ### Three or more ways an ML project can fail (mapped to stages)
 1. **Bad / unrepresentative data** (step 2) — model learns the wrong pattern.

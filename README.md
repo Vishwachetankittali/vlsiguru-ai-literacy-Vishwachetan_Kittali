@@ -15,9 +15,9 @@ Documenting My 16-week AI Literacy Layer portfolio and engineering journal.
 
 
 ## Weekly checklist
-- [x] Week 01 - The AI Landscape : What AI Is - and Is Not
-- [ ] Week 02
-- [ ] Week 03
+- [X] Week 01 - The AI Landscape : What AI Is - and Is Not
+- [X] Week 02 - Machine Learning Foundations
+- [X] Week 03 - Practical AI Tools & Engineering Learning
 - [ ] Week 04
 - [ ] Weeks 05-16 (will be added as released)
 
@@ -33,6 +33,9 @@ Documenting My 16-week AI Literacy Layer portfolio and engineering journal.
 - [Verification log](Week-01/verification-log.md)
 - [AI assistant comparison](Week-01/ai-comparison.md)
 - [Journal - Week 1](journal/Week-01.md)
+
+## Week 2 artifacts
+- [Week 02 index](Week-02/README.md)
 
 ## AI Usage Declaration
 AI tools used:

@@ -11,7 +11,7 @@ How does a computer move from examples and data to a model that can recognise pa
 ## Contents
 | File | What it covers |
 |---|---|
-| [ml_mental_map.png](ml_mental_map.png) | AI → ML → DL → GenAI/LLM concept map |
+| [ml_mental_map.png](evidence/mission_01_concept_map.png) | AI → ML → DL → GenAI/LLM concept map |
 | [mission_01_ai_ml_landscape.md](mission_01_ai_ml_landscape.md) | AI vs rule-based vs ML, landscape |
 | [mission_02_data.md](mission_02_data.md) | Data, features, labels, quality, 8-row dataset |
 | [mission_03_learning_approaches.md](mission_03_learning_approaches.md) | Supervised / unsupervised / RL / self-supervised |

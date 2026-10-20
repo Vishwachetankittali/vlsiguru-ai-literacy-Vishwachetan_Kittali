@@ -3,7 +3,7 @@
 **Research question:** What is artificial intelligence, and where exactly does machine learning fit?
 
 ## 1. Concept map
-![AI, ML, deep learning, generative AI and LLM concept map](images/mission_01_concept_map.png)
+![AI, ML, deep learning, generative AI and LLM concept map](evidence/mission_01_concept_map.png)
 (Same map is also exported as `ml_mental_map.png` in this folder. Note: generative AI is a capability defined by output, so the levels are not all the same kind of thing.)
 
 ## 2. AI vs rule-based programming vs ML
